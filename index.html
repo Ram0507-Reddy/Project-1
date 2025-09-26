@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encrypt & Decrypt a String</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main">
+    <div class="container">
+      <h1>Encrypt & Decrypt a String Program</h1>
+
+      <label for="inputText">Enter string here:</label>
+      <textarea id="inputText" oninput="countCharacters()"></textarea>
+      <p>Character Count: <span id="charCount">0</span></p>
+
+      <button onclick="encrypt()">Encrypt</button>
+      <button onclick="decrypt()">Decrypt</button>
+      <button onclick="resetFields()">Reset</button>
+
+      <div class="result">
+        <label for="outputText">Result:</label>
+        <textarea id="outputText" readonly></textarea>
+      </div>
+
+      <span onclick="copyOutput()">Copy Output</span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
